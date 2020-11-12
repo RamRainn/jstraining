@@ -29,15 +29,36 @@ let incr = 10,
 // --decr;
 
 
-console.log(incr);
-console.log(decr);
+// console.log(incr);
+// console.log(decr);
 
-console.log(5%2);
+// console.log(5%2);
 
-console.log(2*4 === '8');
+// console.log(2*4 === '8');
 
 
-const isCheched = true,
-      isClose = true;
+// const isCheched = true,
+//       isClose = true;
 
-console.log(isCheched || isClose);
+// console.log(isCheched || isClose);
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMoviesDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt('Один из последних просмотренных фильмов? ', ''),
+      b = prompt('На сколько оцените его? ', ''),
+      c = prompt('Один из последних просмотренных фильмов? ', ''),
+      d = prompt('На сколько оцените его? ', '');
+
+
+personalMoviesDB.movies[a] = b;
+personalMoviesDB.movies[c] = d;
+
+console.log(personalMoviesDB);
